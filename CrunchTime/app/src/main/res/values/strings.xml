@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">CrunchTime</string>
+    <string name="action_settings">Settings</string>
+    <string name="edit_message">Enter a message</string>
+    <string name="enter_calories">Calories...</string>
+    <string name="calories">Calories  =</string>
+    <string name="jogging">Minutes of Jogging</string>
+    <string name="pushups">Reps of Pushups</string>
+    <string name="situps">Reps of Situps</string>
+    <string name="jumping">Minutes of Jumping Jacks</string>
+    <string name="squats">Reps of Squats</string>
+    <string name="leg_lift">Minutes of Leg Lifts</string>
+    <string name="plank">Minutes of Plank</string>
+    <string name = "pullup">Reps of Pullups</string>
+    <string name = "cycling">Minutes of Cycling</string>
+    <string name="walking">Minutes of Walking</string>
+    <string name="stairs">Minutes of Stair-Climbing</string>
+    <string name="swimming">Minutes of Swimming</string>
+    <string name="edit_time">Minutes...</string>
+    <string name="edit_reps">Reps...</string>
+</resources>

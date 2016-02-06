@@ -1,0 +1,510 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/gym"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+    <RelativeLayout
+
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation= "vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:showIn="@layout/activity_main">
+
+        <LinearLayout android:id="@+id/calories_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#B3FFFFFF"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:weightSum="1">
+
+            <EditText android:id="@+id/editCalories"
+                android:layout_width="140dp"
+                android:layout_marginLeft="25dp"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:hint="@string/enter_calories"
+                android:inputType="number"
+                android:typeface="sans"
+                android:textSize="10pt"
+                android:textColor="#000000"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="0.31" />
+
+            <TextView android:id="@+id/calories"
+                android:layout_width="140dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="75dp"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignRight="@id/editCalories"
+                android:hint="@string/calories"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="10pt"/>
+
+        </LinearLayout>
+        <!--<EditText android:id="@+id/editCalories"-->
+            <!--android:layout_width="@android:dimen/thumbnail_width"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="5dp"-->
+            <!--android:gravity="center"-->
+            <!--android:hint="@string/enter_calories"-->
+            <!--android:background="#BFFFFFFF"-->
+            <!--android:inputType="number"-->
+            <!--android:typeface="sans"-->
+            <!--android:textSize="10pt"-->
+            <!--android:textColor="#000000"-->
+            <!--android:layout_centerHorizontal="true" />-->
+
+        <LinearLayout android:id="@+id/jogging_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#B3FFFFFF"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:layout_below="@+id/calories_line"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true">
+
+            <EditText android:id="@+id/edit_jogging_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editCalories"
+                android:layout_alignParentTop="true"
+                android:hint="@string/edit_time"
+                android:gravity="left"
+                android:inputType="number"
+                android:textSize="8pt"
+                android:textColor="#000000"/>
+
+            <TextView android:id="@+id/jogging"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:hint="@string/jogging"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="8pt"/>
+
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/pushup_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#B3FFFFFF"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:layout_below="@+id/jogging_line"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:weightSum="1">
+
+            <EditText android:id="@+id/edit_pushups"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/jogging_line"
+                android:layout_alignParentTop="true"
+                android:layout_alignRight="@id/edit_jogging_time"
+                android:hint="@string/edit_reps"
+                android:gravity="left"
+                android:inputType="number"
+                android:textSize="8pt"
+                android:textColor="#000000"/>
+
+            <TextView android:id="@+id/pushups"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:hint="@string/pushups"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="8pt"/>
+
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/situp_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#B3FFFFFF"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:layout_below="@+id/pushup_line"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:weightSum="1">
+
+            <EditText android:id="@+id/edit_situps"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pushup_line"
+                android:layout_alignParentTop="true"
+                android:hint="@string/edit_reps"
+                android:gravity="left"
+                android:inputType="number"
+                android:textSize="8pt"
+                android:textColor="#000000"/>
+
+            <TextView android:id="@+id/situps"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:hint="@string/situps"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="8pt"
+                android:layout_weight="0.80" />
+
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/jumping_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#B3FFFFFF"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:layout_below="@+id/situp_line"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:weightSum="1">
+
+            <EditText android:id="@+id/edit_jumping"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edit_situps"
+                android:layout_alignParentTop="true"
+                android:hint="@string/edit_time"
+                android:gravity="left"
+                android:inputType="number"
+                android:textSize="8pt"
+                android:textColor="#000000"/>
+
+            <TextView android:id="@+id/jumping"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:hint="@string/jumping"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="8pt" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/squat_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#B3FFFFFF"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:layout_below="@+id/jumping_line"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:weightSum="1">
+
+            <EditText
+                android:id="@+id/edit_squats"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edit_situps"
+                android:layout_alignParentTop="true"
+                android:hint="@string/edit_reps"
+                android:gravity="left"
+                android:inputType="number"
+                android:textSize="8pt"
+                android:textColor="#000000"/>
+
+            <TextView
+                android:id="@+id/squats"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:hint="@string/squats"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="8pt"
+                android:layout_weight="0.73" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/leg_lift_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#B3FFFFFF"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:layout_below="@+id/squat_line"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:weightSum="1">
+
+            <EditText
+                android:id="@+id/edit_leg_lift"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edit_situps"
+                android:layout_alignParentTop="true"
+                android:hint="@string/edit_time"
+                android:gravity="left"
+                android:inputType="number"
+                android:textSize="8pt"
+                android:textColor="#000000"/>
+
+            <TextView
+                android:id="@+id/leg_lift"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:hint="@string/leg_lift"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="8pt"
+                android:layout_weight="1.12" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/plank_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#B3FFFFFF"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:layout_below="@+id/leg_lift_line"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:weightSum="1">
+
+            <EditText
+                android:id="@+id/edit_plank"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edit_leg_lift"
+                android:layout_alignParentTop="true"
+                android:hint="@string/edit_time"
+                android:gravity="left"
+                android:inputType="number"
+                android:textSize="8pt"
+                android:textColor="#000000"/>
+
+            <TextView
+                android:id="@+id/plank"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:hint="@string/plank"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="8pt"
+                android:layout_weight="1.12" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/pullup_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#B3FFFFFF"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:layout_below="@+id/plank_line"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:weightSum="1">
+
+            <EditText
+                android:id="@+id/edit_pullups"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edit_planks"
+                android:layout_alignParentTop="true"
+                android:hint="@string/edit_reps"
+                android:gravity="left"
+                android:inputType="number"
+                android:textSize="8pt"
+                android:textColor="#000000"/>
+
+            <TextView
+                android:id="@+id/pullups"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:hint="@string/pullup"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="8pt"
+                android:layout_weight="1.12" />
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/cycling_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#B3FFFFFF"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:layout_below="@+id/pullup_line"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true">
+
+            <EditText android:id="@+id/edit_cycling_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edit_pullups"
+                android:layout_alignParentTop="true"
+                android:hint="@string/edit_time"
+                android:gravity="left"
+                android:inputType="number"
+                android:textSize="8pt"
+                android:textColor="#000000"/>
+
+            <TextView android:id="@+id/cycling"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:hint="@string/cycling"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="8pt"/>
+
+        </LinearLayout>
+        <LinearLayout android:id="@+id/walking_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#B3FFFFFF"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:layout_below="@+id/cycling_line"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true">
+
+            <EditText android:id="@+id/edit_walking_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edit_cycling_time"
+                android:layout_alignParentTop="true"
+                android:hint="@string/edit_time"
+                android:gravity="left"
+                android:inputType="number"
+                android:textSize="8pt"
+                android:textColor="#000000"/>
+
+            <TextView android:id="@+id/walking"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:hint="@string/walking"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="8pt"/>
+
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/swimming_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#B3FFFFFF"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:layout_below="@+id/walking_line"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true">
+
+            <EditText android:id="@+id/edit_swimming_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edit_walking_time"
+                android:layout_alignParentTop="true"
+                android:hint="@string/edit_time"
+                android:gravity="left"
+                android:inputType="number"
+                android:textSize="8pt"
+                android:textColor="#000000"/>
+
+            <TextView android:id="@+id/swimming"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:hint="@string/swimming"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="8pt"/>
+
+        </LinearLayout>
+        <LinearLayout android:id="@+id/stairs_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#B3FFFFFF"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:layout_below="@+id/swimming_line"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true">
+
+            <EditText android:id="@+id/edit_stairs_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edit_swimming_time"
+                android:layout_alignParentTop="true"
+                android:hint="@string/edit_time"
+                android:gravity="left"
+                android:inputType="number"
+                android:textSize="8pt"
+                android:textColor="#000000"/>
+
+            <TextView android:id="@+id/stairs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:hint="@string/stairs"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="8pt"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>
