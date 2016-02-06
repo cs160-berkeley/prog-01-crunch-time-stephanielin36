@@ -1,6 +1,6 @@
 # PROG 01: Crunch Time
 
-This app is designed for people interested in fitness and and staying healthy! In CrunchTime, you can see the minutes/repitions of one type of exercise in terms of other exercises. For example, how many pushups would burn the same amount calories of 1 hour of jogging? Additionally, you can enter a target calorie number and see how much of each exercise you would have to complete to burn those calories.
+This app is designed for people interested in fitness and and staying healthy! In CrunchTime, you can see the minutes/repitions of one type of exercise in terms of other exercises. For example, how many pushups would burn the same amount of calories as 1 hour of jogging? Additionally, you can enter a target calorie number and see how much of each exercise you would have to complete to burn those calories.
 
 ## Authors
 
