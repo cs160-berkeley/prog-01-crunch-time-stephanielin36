@@ -8,7 +8,7 @@ Stephanie Lin ([stlin@berkeley.edu](mailto:stlin@berkeley.edu))
 
 ## Demo Video
 
-See [your demo video title here] (https://link_to_your_video)
+See [Prog 01: CrunchTime] (https://youtu.be/Pu5UMzp9OVg)
 
 ## Screenshots
 
